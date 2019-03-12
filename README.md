@@ -76,4 +76,4 @@ CMD /root/start.sh
 -------
 
 ## Donate
-![](https://github.com/xbw12138/dockerfile_mpush/blob/master/alipay.png)
+![](https://github.com/xbw12138/dockerfile_mpush/blob/master/donate.png)
