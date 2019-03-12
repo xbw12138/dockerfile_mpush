@@ -14,7 +14,5 @@ chmod +x /root/mpush/alloc/bin/*.sh
 /root/mpush/alloc/bin/mp.sh start
 
 
-echo "棒棒 xbw@ecfun.cc 新浪微博 @DMT许博文"
-echo "mpush地址 ip:9999"
-/etc/init.d/shadowsocks restart &&
-service crond start ; /usr/sbin/sshd -D
+echo "棒棒 xbw@ecfun.cc 新浪微博 @偏不写作业"
+echo "mpush地址 ip:9999的容器端口"

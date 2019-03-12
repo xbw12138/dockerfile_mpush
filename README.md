@@ -1,3 +1,15 @@
+# Mpush - Dockerfile
+
+配置了SSH <br>
+用户：root <br>
+密码：password <br>
+
+-------
+
+Mpush - 0.8.0 <br>
+
+Dockerfile <br>
+```
 FROM centos:6.7
 MAINTAINER xubowen "xbw@ecfun.cc"
 
@@ -33,4 +45,10 @@ RUN chmod +x /root/start.sh
 EXPOSE 9999
 EXPOSE 22
 CMD /root/start.sh
+
+```
+
+-------
+
+## Donate
 
