@@ -3,15 +3,15 @@ MAINTAINER xubowen "xbw@ecfun.cc"
 
 RUN yum update -y glibc-common
 
-RUN yum install -y sudo passwd openssh-server openssh-clients tar screen crontabs strace telnet perl libpcap bc patch ntp dnsmasq unzip pax which
+RUN rpm --rebuilddb && yum install -y sudo passwd openssh-server openssh-clients tar screen crontabs strace telnet perl libpcap bc patch ntp dnsmasq unzip pax which
 
 RUN rpm -Uvh http://download.fedoraproject.org/pub/epel/6/x86_64/epel-release-6-8.noarch.rpm
 
-RUN (yum install -y hiera lsyncd sshpass rng-tools)
+RUN (rpm --rebuilddb && yum install -y hiera lsyncd sshpass rng-tools)
 
-RUN (yum -y install java-1.8.0-openjdk.x86_64)
+RUN (rpm --rebuilddb && yum -y install java-1.8.0-openjdk.x86_64)
 
-RUN (yum -y install redis)
+RUN (rpm --rebuilddb && yum -y install redis)
 
 RUN (service sshd start; \
 	 sed -i 's/UsePAM yes/#UsePAM yes/g' /etc/ssh/sshd_config; \
