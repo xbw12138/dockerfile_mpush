@@ -1,14 +1,39 @@
 # Mpush - Dockerfile
 
-配置了SSH <br>
-用户：root <br>
-密码：password <br>
+[Mpush](http://mpusher.github.io)
+## System introduction.
+Mpush, an open source real-time message push system, is developed with the Java language and the server adopts the modular design. It has the characteristics of simple protocol, safe transmission, smooth interface, real-time efficiency, strong scalability, configurable, convenient deployment and perfect monitoring. It is also a rare commercial open source push system.
 
 -------
 
-Mpush - 0.8.0 <br>
+## Features and advantages
+1. Open source code, including server, android, ios (unlike some open source services open only part of the code, contempt under)
+2. High code quality, fully modular design, true commercial grade product, considering most of the scenarios encountered in push
+3. High security, based on RSA compact encryption handshake protocol, simple, efficient, secure
+4. Support broken line reconnection and fast reconnection under weak network, automatic sleep without network to save power and resources
+5. Compact protocol, smooth interface, data compression support, more save traffic
+6. Support for cluster deployment, load balancing, based on a mature zookeeper implementation
+7. User routing using redis cluster, support single write, double write, cluster grouping; Good performance and high availability
+8. Support for HTTP proxies, where a single TCP link takes over most of the application requests, making HTTP requests more timely
+9. Highly configurable, most scenarios can be met by modifying the configuration
+10. Expandable, highly modular, SPI mode - based pluggable design to meet special needs
+11. Perfect monitoring, detailed log, can quickly troubleshoot online problems and service tuning
 
-Dockerfile <br>
+-------
+
+## Docker
+ 
+SSH <br>
+user：root <br>
+password：password <br>
+
+-------
+
+* [x] Mpush - 0.8.0 <br>
+* [x] Mpush - Alloc - 0.8.0 <br>
+* [x] Zookeeper - 3.3.6 <br>
+-------
+
 ```
 FROM centos:6.7
 MAINTAINER xubowen "xbw@ecfun.cc"
@@ -51,4 +76,4 @@ CMD /root/start.sh
 -------
 
 ## Donate
-
+![](https://github.com/xbw12138/dockerfile_mpush/blob/master/alipay.png)
