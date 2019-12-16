@@ -1,6 +1,8 @@
 FROM centos:6.7
 MAINTAINER xubowen "xbw@ecfun.cc"
 
+RUN rpm -Uvh http://download.fedoraproject.org/pub/epel/6/x86_64/epel-release-6-8.noarch.rpm
+
 RUN (rpm --rebuilddb && yum -y install java-1.8.0-openjdk.x86_64)
 
 RUN (rpm --rebuilddb && yum -y install redis)
