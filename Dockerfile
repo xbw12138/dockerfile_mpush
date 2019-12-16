@@ -10,6 +10,5 @@ ADD redis.conf /etc/redis.conf
 COPY start.sh /root/start.sh
 RUN chmod +x /root/start.sh
 EXPOSE 9999
-EXPOSE 22
 CMD /root/start.sh
 
