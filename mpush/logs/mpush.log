@@ -1,0 +1,9 @@
+2019-05-20 16:44:16.534 - [main] WARN  - org.apache.curator.utils.ZKPaths - The version of ZooKeeper being used doesn't support Container nodes. CreateMode.PERSISTENT will be used instead.
+2019-05-20 17:09:27.280 - [main] WARN  - org.apache.curator.utils.ZKPaths - The version of ZooKeeper being used doesn't support Container nodes. CreateMode.PERSISTENT will be used instead.
+2019-05-20 17:09:27.512 - [main] WARN  - i.n.util.internal.MacAddressUtil - Failed to find a usable hardware address from the network interfaces; using random bytes: 91:71:cf:bb:10:4b:d6:dc
+2019-05-20 17:15:42.521 - [main] WARN  - org.apache.curator.utils.ZKPaths - The version of ZooKeeper being used doesn't support Container nodes. CreateMode.PERSISTENT will be used instead.
+2019-05-20 17:36:38.293 - [main] WARN  - org.apache.curator.utils.ZKPaths - The version of ZooKeeper being used doesn't support Container nodes. CreateMode.PERSISTENT will be used instead.
+2019-05-20 18:01:54.281 - [mp-conn-work-3-2] ERROR - c.m.c.server.ServerChannelHandler - caught an ex, channel=[id: 0xe81974c7, L:/192.168.3.26:3000 - R:/192.168.3.170:49881], conn=[channel=[id: 0xe81974c7, L:/192.168.3.26:3000 - R:/192.168.3.170:49881], context={osName='android', osVersion='5.1.1', deviceId='432873432873', userId='user-0', tags='mpush:4', heartbeat=180000}, status=1, lastReadTime=1558346097405, lastWriteTime=1558346514059]
+io.netty.channel.unix.Errors$NativeIoException: syscall:read(...)() failed: Connection reset by peer
+	at io.netty.channel.unix.FileDescriptor.readAddress(...)(Unknown Source)
+2019-05-20 18:12:04.878 - [main-SendThread(127.0.0.1:2181)] WARN  - org.apache.zookeeper.ClientCnxn - Client session timed out, have not heard from server in 3666ms for sessionid 0x100000062d40002

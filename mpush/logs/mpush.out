@@ -1,0 +1,269 @@
+17:44:47.069 - {
+    "conf" : "/root/mpush/bin/../conf/mpush.conf",
+    "core" : {
+        "compress-threshold" : "10k",
+        "epoll-provider" : "netty",
+        "max-hb-timeout-times" : 2,
+        "max-heartbeat" : "3m",
+        "max-packet-size" : "10k",
+        "min-heartbeat" : "3m",
+        "session-expired-time" : "1d"
+    },
+    "home" : "/root/mpush/bin/..",
+    "http" : {
+        "default-read-timeout" : "10s",
+        "dns-mapping" : {},
+        "max-conn-per-host" : 5,
+        "max-content-length" : "5m",
+        "proxy-enabled" : true
+    },
+    "log-conf-path" : "/root/mpush/bin/../conf/logback.xml",
+    "log-dir" : "/root/mpush/bin/../logs",
+    "log-level" : "warn",
+    "monitor" : {
+        "dump-dir" : "/root/mpush/bin/../tmp",
+        "dump-period" : "1m",
+        "dump-stack" : false,
+        "print-log" : true,
+        "profile-enabled" : false,
+        "profile-slowly-duration" : "10ms"
+    },
+    "net" : {
+        "admin-server-port" : 3002,
+        "connect-server-bind-ip" : "",
+        "connect-server-port" : 3000,
+        "connect-server-register-attr" : {
+            "weight" : 1
+        },
+        "connect-server-register-ip" : "",
+        "gateway-client-multicast" : "239.239.239.99",
+        "gateway-client-num" : 1,
+        "gateway-client-port" : 4000,
+        "gateway-server-bind-ip" : "",
+        "gateway-server-multicast" : "239.239.239.88",
+        "gateway-server-net" : "tcp",
+        "gateway-server-port" : 3001,
+        "gateway-server-register-ip" : "",
+        "local-ip" : "192.168.3.26",
+        "public-host-mapping" : {},
+        "public-ip" : "",
+        "rcv_buf" : {
+            "connect-server" : "32k",
+            "gateway-client" : 0,
+            "gateway-server" : 0
+        },
+        "snd_buf" : {
+            "connect-server" : "32k",
+            "gateway-client" : 0,
+            "gateway-server" : 0
+        },
+        "traffic-shaping" : {
+            "connect-server" : {
+                "check-interval" : "100ms",
+                "enabled" : false,
+                "read-channel-limit" : "3k",
+                "read-global-limit" : "100k",
+                "write-channel-limit" : "3k",
+                "write-global-limit" : 0
+            },
+            "gateway-client" : {
+                "check-interval" : "100ms",
+                "enabled" : false,
+                "read-channel-limit" : 0,
+                "read-global-limit" : 0,
+                "write-channel-limit" : "3k",
+                "write-global-limit" : "30k"
+            },
+            "gateway-server" : {
+                "check-interval" : "100ms",
+                "enabled" : false,
+                "read-channel-limit" : "3k",
+                "read-global-limit" : "30k",
+                "write-channel-limit" : 0,
+                "write-global-limit" : 0
+            }
+        },
+        "write-buffer-water-mark" : {
+            "connect-server-high" : "64k",
+            "connect-server-low" : "32k",
+            "gateway-server-high" : "20m",
+            "gateway-server-low" : "10m"
+        },
+        "ws-path" : "/",
+        "ws-server-port" : 0
+    },
+    "push" : {
+        "flow-control" : {
+            "broadcast" : {
+                "duration" : "1s",
+                "limit" : 3000,
+                "max" : 100000
+            },
+            "global" : {
+                "duration" : "1s",
+                "limit" : 5000,
+                "max" : 0
+            }
+        }
+    },
+    "redis" : {
+        "cluster-model" : "single",
+        "config" : {
+            "blockWhenExhausted" : true,
+            "fairness" : false,
+            "jmxEnabled" : false,
+            "jmxNameBase" : "pool",
+            "jmxNamePrefix" : "pool",
+            "lifo" : true,
+            "maxIdle" : 4,
+            "maxTotal" : 8,
+            "maxWaitMillis" : 5000,
+            "minEvictableIdleTimeMillis" : 300000,
+            "minIdle" : 1,
+            "numTestsPerEvictionRun" : 3,
+            "softMinEvictableIdleTimeMillis" : 1800000,
+            "testOnBorrow" : false,
+            "testOnCreate" : false,
+            "testOnReturn" : false,
+            "testWhileIdle" : false,
+            "timeBetweenEvictionRunsMillis" : 60000
+        },
+        "nodes" : [
+            "127.0.0.1:6379"
+        ],
+        "password" : "",
+        "sentinel-master" : ""
+    },
+    "security" : {
+        "aes-key-length" : 16,
+        "private-key" : "MIIBNgIBADANBgkqhkiG9w0BAQEFAASCASAwggEcAgEAAoGBAKCE8JYKhsbydMPbiO7BJVq1pbuJWJHFxOR7L8Hv3ZVkSG4eNC8DdwAmDHYu/wadfw0ihKFm2gKDcLHp5yz5UQ8PZ8FyDYvgkrvGV0ak4nc40QDJWws621dm01e/INlGKOIStAAsxOityCLv0zm5Vf3+My/YaBvZcB5mGUsPbx8fAgEAAoGAAy0+WanRqwRHXUzt89OsupPXuNNqBlCEqgTqGAt4Nimq6Ur9u2R1KXKXUotxjp71Ubw6JbuUWvJg+5Rmd9RjT0HOUEQF3rvzEepKtaraPhV5ejEIrB+nJWNfGye4yzLdfEXJBGUQzrG+wNe13izfRNXI4dN/6Q5npzqaqv0E1CkCAQACAQACAQACAQACAQA=",
+        "public-key" : "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCghPCWCobG8nTD24juwSVataW7iViRxcTkey/B792VZEhuHjQvA3cAJgx2Lv8GnX8NIoShZtoCg3Cx6ecs+VEPD2fBcg2L4JK7xldGpOJ3ONEAyVsLOttXZtNXvyDZRijiErQALMTorcgi79M5uVX9/jMv2Ggb2XAeZhlLD28fHwIDAQAB"
+    },
+    "spi" : {
+        "dns-mapping-manager" : "com.mpush.common.net.HttpProxyDnsMappingManager",
+        "thread-pool-factory" : "com.mpush.tools.thread.pool.DefaultThreadPoolFactory"
+    },
+    "thread" : {
+        "pool" : {
+            "ack-timer" : 1,
+            "conn-work" : 0,
+            "event-bus" : {
+                "max" : 16,
+                "min" : 1,
+                "queue-size" : 10000
+            },
+            "gateway-client-work" : 0,
+            "gateway-server-work" : 0,
+            "http-work" : 0,
+            "mq" : {
+                "max" : 4,
+                "min" : 1,
+                "queue-size" : 10000
+            },
+            "push-client" : 2,
+            "push-task" : 0
+        }
+    },
+    "zk" : {
+        "connectionTimeoutMs" : "5s",
+        "digest" : "mpush",
+        "namespace" : "mpush",
+        "retry" : {
+            "baseSleepTimeMs" : "3s",
+            "maxRetries" : 3,
+            "maxSleepMs" : "5s"
+        },
+        "server-address" : "127.0.0.1:2181",
+        "sessionTimeoutMs" : "5s",
+        "watch-path" : "/"
+    }
+}
+
+17:44:47.070 - launch mpush server...
+17:44:47.358 - bootstrap chain starting...
+17:44:47.358 - start bootstrap job [CacheManagerBoot]
+17:44:47.415 - start bootstrap job [ServiceRegistryBoot]
+17:44:47.416 - init service registry waiting for connected...
+17:44:47.534 - start bootstrap job [ServiceDiscoveryBoot]
+17:44:47.534 - init service discovery waiting for connected...
+17:44:47.536 - start bootstrap job [ServerBoot(ConnectionServer)]
+17:44:47.725 - start ConnectionServer success on:3000
+17:44:47.836 - start bootstrap job [ServerBoot(GatewayServer)]
+17:44:47.855 - start GatewayServer success on:3001
+17:44:47.861 - start bootstrap job [ServerBoot(AdminServer)]
+17:44:47.908 - start AdminServer success on:3002
+17:44:47.908 - start bootstrap job [RouterCenterBoot]
+17:44:47.987 - start bootstrap job [PushCenterBoot]
+17:44:48.060 - start bootstrap job [HttpProxyBoot]
+17:44:48.070 - start bootstrap job [MonitorBoot]
+17:44:48.070 - start bootstrap job [LastBoot]
+17:44:48.073 - bootstrap chain started.
+17:44:48.073 - ===================================================================
+17:44:48.073 - ====================MPUSH SERVER START SUCCESS=====================
+17:44:48.073 - ===================================================================
+18:12:15.298 - bootstrap chain stopping...
+18:12:15.298 - stopped bootstrap job [LastBoot]
+Exception in thread "mp-t-1-/mpush/kick/192.168.3.26:3001" java.lang.RuntimeException: redis.clients.jedis.exceptions.JedisConnectionException: Unexpected end of stream.
+	at com.mpush.cache.redis.manager.RedisManager.call(RedisManager.java:90)
+	at com.mpush.cache.redis.manager.RedisManager.lambda$subscribe$25(RedisManager.java:330)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: redis.clients.jedis.exceptions.JedisConnectionException: Unexpected end of stream.
+	at redis.clients.util.RedisInputStream.ensureFill(RedisInputStream.java:199)
+	at redis.clients.util.RedisInputStream.readByte(RedisInputStream.java:40)
+	at redis.clients.jedis.Protocol.process(Protocol.java:151)
+	at redis.clients.jedis.Protocol.read(Protocol.java:215)
+	at redis.clients.jedis.Connection.readProtocolWithCheckingBroken(Connection.java:340)
+	at redis.clients.jedis.Connection.getRawObjectMultiBulkReply(Connection.java:285)
+	at redis.clients.jedis.JedisPubSub.process(JedisPubSub.java:121)
+	at redis.clients.jedis.JedisPubSub.proceed(JedisPubSub.java:115)
+	at redis.clients.jedis.Jedis.subscribe(Jedis.java:2680)
+	at com.mpush.cache.redis.manager.RedisManager.lambda$null$24(RedisManager.java:332)
+	at com.mpush.cache.redis.manager.RedisManager.call(RedisManager.java:87)
+	... 2 more
+18:12:15.330 - stopped bootstrap job [MonitorBoot]
+18:12:15.334 - stopped bootstrap job [HttpProxyBoot]
+18:12:15.334 - stopped bootstrap job [PushCenterBoot]
+18:12:15.346 - mpush server stop ex
+com.mpush.api.service.ServiceException: java.lang.RuntimeException: redis.clients.jedis.exceptions.JedisConnectionException: Unexpected end of stream.
+	at com.mpush.api.service.FutureListener.onFailure(FutureListener.java:33)
+	at com.mpush.api.service.BaseService.tryStop(BaseService.java:70)
+	at com.mpush.api.service.BaseService.stop(BaseService.java:111)
+	at com.mpush.api.service.BaseService.stop(BaseService.java:90)
+	at com.mpush.bootstrap.job.RouterCenterBoot.stop(RouterCenterBoot.java:45)
+	at com.mpush.bootstrap.job.BootJob.stopNext(BootJob.java:47)
+	at com.mpush.bootstrap.job.ServerBoot.stop(ServerBoot.java:66)
+	at com.mpush.bootstrap.job.BootJob.stopNext(BootJob.java:47)
+	at com.mpush.bootstrap.job.ServerBoot.stop(ServerBoot.java:66)
+	at com.mpush.bootstrap.job.BootJob.stopNext(BootJob.java:47)
+	at com.mpush.bootstrap.job.ServerBoot.stop(ServerBoot.java:66)
+	at com.mpush.bootstrap.job.BootJob.stopNext(BootJob.java:47)
+	at com.mpush.bootstrap.job.ServiceDiscoveryBoot.stop(ServiceDiscoveryBoot.java:43)
+	at com.mpush.bootstrap.job.BootJob.stopNext(BootJob.java:47)
+	at com.mpush.bootstrap.job.ServiceRegistryBoot.stop(ServiceRegistryBoot.java:41)
+	at com.mpush.bootstrap.job.BootJob.stopNext(BootJob.java:47)
+	at com.mpush.bootstrap.job.CacheManagerBoot.stop(CacheManagerBoot.java:41)
+	at com.mpush.bootstrap.job.BootJob.stopNext(BootJob.java:47)
+	at com.mpush.bootstrap.job.BootChain$1.stop(BootChain.java:49)
+	at com.mpush.bootstrap.job.BootChain.stop(BootChain.java:64)
+	at com.mpush.bootstrap.ServerLauncher.stop(ServerLauncher.java:78)
+	at com.mpush.bootstrap.Main.lambda$addHook$0(Main.java:54)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.RuntimeException: redis.clients.jedis.exceptions.JedisConnectionException: Unexpected end of stream.
+	at com.mpush.cache.redis.manager.RedisManager.call(RedisManager.java:90)
+	at com.mpush.cache.redis.manager.RedisManager.del(RedisManager.java:144)
+	at com.mpush.common.user.UserManager.clearUserOnlineData(UserManager.java:80)
+	at com.mpush.core.router.RouterCenter.doStop(RouterCenter.java:65)
+	at com.mpush.api.service.BaseService.tryStop(BaseService.java:67)
+	... 21 common frames omitted
+Caused by: redis.clients.jedis.exceptions.JedisConnectionException: Unexpected end of stream.
+	at redis.clients.util.RedisInputStream.ensureFill(RedisInputStream.java:199)
+	at redis.clients.util.RedisInputStream.readByte(RedisInputStream.java:40)
+	at redis.clients.jedis.Protocol.process(Protocol.java:151)
+	at redis.clients.jedis.Protocol.read(Protocol.java:215)
+	at redis.clients.jedis.Connection.readProtocolWithCheckingBroken(Connection.java:340)
+	at redis.clients.jedis.Connection.getIntegerReply(Connection.java:265)
+	at redis.clients.jedis.Jedis.del(Jedis.java:197)
+	at com.mpush.cache.redis.manager.RedisManager.lambda$del$4(RedisManager.java:144)
+	at com.mpush.cache.redis.manager.RedisManager.call(RedisManager.java:87)
+	... 25 common frames omitted
+18:12:15.346 - jvm exit, all service stopped.

@@ -1,0 +1,191 @@
+17:36:46.106 - {
+    "conf" : "/root/alloc/bin/../conf/mpush.conf",
+    "core" : {
+        "compress-threshold" : "10k",
+        "epoll-provider" : "netty",
+        "max-hb-timeout-times" : 2,
+        "max-heartbeat" : "3m",
+        "max-packet-size" : "10k",
+        "min-heartbeat" : "3m",
+        "session-expired-time" : "1d"
+    },
+    "home" : "/root/alloc/bin/..",
+    "http" : {
+        "default-read-timeout" : "10s",
+        "dns-mapping" : {},
+        "max-conn-per-host" : 5,
+        "max-content-length" : "5m",
+        "proxy-enabled" : false
+    },
+    "log-conf-path" : "/root/alloc/bin/../conf/logback.xml",
+    "log-dir" : "/root/alloc/bin/../logs",
+    "log-level" : "warn",
+    "monitor" : {
+        "dump-dir" : "/root/alloc/bin/../tmp",
+        "dump-period" : "1m",
+        "dump-stack" : false,
+        "print-log" : true,
+        "profile-enabled" : false,
+        "profile-slowly-duration" : "10ms"
+    },
+    "net" : {
+        "admin-server-port" : 3002,
+        "alloc-server-port" : 9999,
+        "alloc-server-protocol" : "http",
+        "connect-server-bind-ip" : "",
+        "connect-server-port" : 3000,
+        "connect-server-register-attr" : {
+            "weight" : 1
+        },
+        "connect-server-register-ip" : "",
+        "gateway-client-multicast" : "239.239.239.99",
+        "gateway-client-num" : 1,
+        "gateway-client-port" : 4000,
+        "gateway-server-bind-ip" : "",
+        "gateway-server-multicast" : "239.239.239.88",
+        "gateway-server-net" : "tcp",
+        "gateway-server-port" : 3001,
+        "gateway-server-register-ip" : "",
+        "local-ip" : "",
+        "public-host-mapping" : {},
+        "public-ip" : "",
+        "rcv_buf" : {
+            "connect-server" : "32k",
+            "gateway-client" : 0,
+            "gateway-server" : 0
+        },
+        "snd_buf" : {
+            "connect-server" : "32k",
+            "gateway-client" : 0,
+            "gateway-server" : 0
+        },
+        "traffic-shaping" : {
+            "connect-server" : {
+                "check-interval" : "100ms",
+                "enabled" : false,
+                "read-channel-limit" : "3k",
+                "read-global-limit" : "100k",
+                "write-channel-limit" : "3k",
+                "write-global-limit" : 0
+            },
+            "gateway-client" : {
+                "check-interval" : "100ms",
+                "enabled" : false,
+                "read-channel-limit" : 0,
+                "read-global-limit" : 0,
+                "write-channel-limit" : "3k",
+                "write-global-limit" : "30k"
+            },
+            "gateway-server" : {
+                "check-interval" : "100ms",
+                "enabled" : false,
+                "read-channel-limit" : "3k",
+                "read-global-limit" : "30k",
+                "write-channel-limit" : 0,
+                "write-global-limit" : 0
+            }
+        },
+        "write-buffer-water-mark" : {
+            "connect-server-high" : "64k",
+            "connect-server-low" : "32k",
+            "gateway-server-high" : "20m",
+            "gateway-server-low" : "10m"
+        },
+        "ws-path" : "/",
+        "ws-server-port" : 0
+    },
+    "push" : {
+        "flow-control" : {
+            "broadcast" : {
+                "duration" : "1s",
+                "limit" : 3000,
+                "max" : 100000
+            },
+            "global" : {
+                "duration" : "1s",
+                "limit" : 5000,
+                "max" : 0
+            }
+        }
+    },
+    "redis" : {
+        "cluster-model" : "single",
+        "config" : {
+            "blockWhenExhausted" : true,
+            "fairness" : false,
+            "jmxEnabled" : false,
+            "jmxNameBase" : "pool",
+            "jmxNamePrefix" : "pool",
+            "lifo" : true,
+            "maxIdle" : 4,
+            "maxTotal" : 8,
+            "maxWaitMillis" : 5000,
+            "minEvictableIdleTimeMillis" : 300000,
+            "minIdle" : 1,
+            "numTestsPerEvictionRun" : 3,
+            "softMinEvictableIdleTimeMillis" : 1800000,
+            "testOnBorrow" : false,
+            "testOnCreate" : false,
+            "testOnReturn" : false,
+            "testWhileIdle" : false,
+            "timeBetweenEvictionRunsMillis" : 60000
+        },
+        "nodes" : [
+            "127.0.0.1:6379"
+        ],
+        "password" : "",
+        "sentinel-master" : ""
+    },
+    "security" : {
+        "aes-key-length" : 16,
+        "private-key" : "MIIBNgIBADANBgkqhkiG9w0BAQEFAASCASAwggEcAgEAAoGBAKCE8JYKhsbydMPbiO7BJVq1pbuJWJHFxOR7L8Hv3ZVkSG4eNC8DdwAmDHYu/wadfw0ihKFm2gKDcLHp5yz5UQ8PZ8FyDYvgkrvGV0ak4nc40QDJWws621dm01e/INlGKOIStAAsxOityCLv0zm5Vf3+My/YaBvZcB5mGUsPbx8fAgEAAoGAAy0+WanRqwRHXUzt89OsupPXuNNqBlCEqgTqGAt4Nimq6Ur9u2R1KXKXUotxjp71Ubw6JbuUWvJg+5Rmd9RjT0HOUEQF3rvzEepKtaraPhV5ejEIrB+nJWNfGye4yzLdfEXJBGUQzrG+wNe13izfRNXI4dN/6Q5npzqaqv0E1CkCAQACAQACAQACAQACAQA=",
+        "public-key" : "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCghPCWCobG8nTD24juwSVataW7iViRxcTkey/B792VZEhuHjQvA3cAJgx2Lv8GnX8NIoShZtoCg3Cx6ecs+VEPD2fBcg2L4JK7xldGpOJ3ONEAyVsLOttXZtNXvyDZRijiErQALMTorcgi79M5uVX9/jMv2Ggb2XAeZhlLD28fHwIDAQAB"
+    },
+    "spi" : {
+        "dns-mapping-manager" : "com.mpush.common.net.HttpProxyDnsMappingManager",
+        "thread-pool-factory" : "com.mpush.tools.thread.pool.DefaultThreadPoolFactory"
+    },
+    "thread" : {
+        "pool" : {
+            "ack-timer" : 1,
+            "conn-work" : 0,
+            "event-bus" : {
+                "max" : 16,
+                "min" : 1,
+                "queue-size" : 10000
+            },
+            "gateway-client-work" : 0,
+            "gateway-server-work" : 0,
+            "http-work" : 0,
+            "mq" : {
+                "max" : 4,
+                "min" : 1,
+                "queue-size" : 10000
+            },
+            "push-client" : 2,
+            "push-task" : 0
+        }
+    },
+    "zk" : {
+        "connectionTimeoutMs" : "5s",
+        "digest" : "mpush",
+        "namespace" : "mpush",
+        "retry" : {
+            "baseSleepTimeMs" : "3s",
+            "maxRetries" : 3,
+            "maxSleepMs" : "5s"
+        },
+        "server-address" : "127.0.0.1:2181",
+        "sessionTimeoutMs" : "5s",
+        "watch-path" : "/"
+    }
+}
+
+17:36:46.107 - launch alloc server...
+17:36:46.852 - ===================================================================
+17:36:46.852 - ====================ALLOC SERVER START SUCCESS=====================
+17:36:46.852 - ===================================================================
+18:12:17.027 - ===================================================================
+18:12:17.027 - ====================ALLOC SERVER STOPPED SUCCESS=====================
+18:12:17.027 - ===================================================================
+18:12:17.028 - jvm exit, all service stopped...

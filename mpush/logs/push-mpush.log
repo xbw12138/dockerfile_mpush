@@ -1,0 +1,2 @@
+2019-05-20 18:02:58.201 - [SingleUserPush] push message to client success, timeLine=TimeLine[11](ms){push-center-begin --（0ms) --> before-send --（11ms) --> success-end}, message=GatewayPushMessage{userId='user-0', clientType='1', timeout='2500', content='188'}
+2019-05-20 18:03:10.041 - [SingleUserPush] push message to client success, timeLine=TimeLine[3](ms){push-center-begin --（0ms) --> before-send --（3ms) --> success-end}, message=GatewayPushMessage{userId='user-0', clientType='1', timeout='2500', content='188'}

@@ -1,0 +1,28 @@
+2019-05-20 16:44:16.431 - init zk client, config=ZKConfig{hosts='127.0.0.1:2181', digest='mpush', namespace='mpush', maxRetries=3, baseSleepTimeMs=3000, maxSleepMs=5000, sessionTimeout=5000, connectionTimeout=5000, watchPath='/'}
+2019-05-20 16:44:16.461 - init zk client waiting for connected...
+2019-05-20 16:44:16.558 - zk client start success, server lists is:127.0.0.1:2181
+2019-05-20 16:44:16.868 - register {host='172.17.0.1', port=3000, attrs={weight=1}, persistent=false} to srd success.
+2019-05-20 16:44:16.901 - register {host='172.17.0.1', port=3001, attrs=null, persistent=false} to srd success.
+2019-05-20 17:09:27.163 - init zk client, config=ZKConfig{hosts='127.0.0.1:2181', digest='mpush', namespace='mpush', maxRetries=3, baseSleepTimeMs=3000, maxSleepMs=5000, sessionTimeout=5000, connectionTimeout=5000, watchPath='/'}
+2019-05-20 17:09:27.204 - init zk client waiting for connected...
+2019-05-20 17:09:27.331 - zk client start success, server lists is:127.0.0.1:2181
+2019-05-20 17:09:27.709 - register {host='172.17.0.1', port=3000, attrs={weight=1}, persistent=false} to srd success.
+2019-05-20 17:09:27.737 - register {host='172.17.0.1', port=3001, attrs=null, persistent=false} to srd success.
+2019-05-20 17:15:42.389 - init zk client, config=ZKConfig{hosts='127.0.0.1:2181', digest='mpush', namespace='mpush', maxRetries=3, baseSleepTimeMs=3000, maxSleepMs=5000, sessionTimeout=5000, connectionTimeout=5000, watchPath='/'}
+2019-05-20 17:15:42.424 - init zk client waiting for connected...
+2019-05-20 17:15:42.576 - zk client start success, server lists is:127.0.0.1:2181
+2019-05-20 17:15:42.937 - register {host='172.17.0.1', port=3000, attrs={weight=1}, persistent=false} to srd success.
+2019-05-20 17:15:42.964 - register {host='172.17.0.1', port=3001, attrs=null, persistent=false} to srd success.
+2019-05-20 17:36:38.164 - init zk client, config=ZKConfig{hosts='127.0.0.1:2181', digest='mpush', namespace='mpush', maxRetries=3, baseSleepTimeMs=3000, maxSleepMs=5000, sessionTimeout=5000, connectionTimeout=5000, watchPath='/'}
+2019-05-20 17:36:38.201 - init zk client waiting for connected...
+2019-05-20 17:36:38.351 - zk client start success, server lists is:127.0.0.1:2181
+2019-05-20 17:36:38.752 - register {host='172.17.0.1', port=3000, attrs={weight=1}, persistent=false} to srd success.
+2019-05-20 17:36:38.784 - register {host='172.17.0.1', port=3001, attrs=null, persistent=false} to srd success.
+2019-05-20 17:44:41.656 - zk client closed...
+2019-05-20 17:44:47.450 - init zk client, config=ZKConfig{hosts='127.0.0.1:2181', digest='mpush', namespace='mpush', maxRetries=3, baseSleepTimeMs=3000, maxSleepMs=5000, sessionTimeout=5000, connectionTimeout=5000, watchPath='/'}
+2019-05-20 17:44:47.483 - init zk client waiting for connected...
+2019-05-20 17:44:47.534 - zk client start success, server lists is:127.0.0.1:2181
+2019-05-20 17:44:47.836 - register {host='192.168.3.26', port=3000, attrs={weight=1}, persistent=false} to srd success.
+2019-05-20 17:44:47.861 - register {host='192.168.3.26', port=3001, attrs=null, persistent=false} to srd success.
+2019-05-20 18:12:04.988 - zk connection state changed new state=SUSPENDED, isConnected=false
+2019-05-20 18:12:06.065 - zk connection state changed new state=RECONNECTED, isConnected=true
